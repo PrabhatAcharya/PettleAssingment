@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pettle</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./Index.css" />
+    <link rel="stylesheet" href="./calender.css" />
+  </head>
+
+  <body >
+    <div class="top-menu">
+      <div class="logo">
+        <img src="./Pettle-Logo-Final.png" alt="Logo"/>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+        <i class="fas fa-search"></i>
+      </div>
+      
+      <div class="text">Welcome to Pettle !</div>
+    </div>
+
+    <div id="contentainer">
+      
+      <div class="side-menu">
+        <div class="button" onclick="getAllproducts()">All</div>
+        <div class="button" onclick="getAllelectronics()">Upcomming</div>
+        <div class="button"onclick="getAllwomenclothing()">Check-In</div>
+      </div>
+
+      <div class="calendar-maindiv">
+        <!-- Calendar content goes here -->
+        <h2 style="text-align: center;">Book Your Calendar</h2>
+        <div class="calendar">
+          <div class="header">
+            <button id="prev-btn">&lt;</button>
+            <h2 id="month-year"></h2>
+            <button id="next-btn">&gt;</button>
+          </div>
+          <div class="days"></div>
+        </div>
+      </div>
+
+      <div class="list-view">
+        <h3 id="bookinglistheading">Booking List</h3>
+        <div id="bookings-list">
+         
+        </div>
+        
+        <div class="prev-button" onclick="DecrementPage()" >Previous</div>
+        <div class="next-button" onclick="IncrementPage()" >Next</div>
+      </div>
+    </div>
+  </body>
+  <script src="./calender.js"></script>
+  <script src="./index.js"></script>
+  <script
+    src="https://kit.fontawesome.com/36a70f0f2a.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
